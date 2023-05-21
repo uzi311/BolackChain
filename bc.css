@@ -1,0 +1,43 @@
+body {
+    background-image: url('block.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 350px;
+  }
+  
+  h1:hover {
+    animation: disco 0.5s infinite, spin 3s infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+    to {
+      transform: rotate(360deg) scale(3);
+    }
+  }
+  
+  @keyframes disco {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: yellow;
+    }
+    100% {
+      color: red;
+    }
+  }
+  
